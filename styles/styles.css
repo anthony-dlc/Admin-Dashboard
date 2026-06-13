@@ -80,6 +80,8 @@ h6 {
 
 * {
   font-family: "Roboto";
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -96,14 +98,14 @@ h6 {
   flex-direction: column;
   gap: 16px;
   justify-content: center;
-  padding: 16px 24px;
+  padding: 16px 32px;
 }
 
 .header {
   background-color: lightcoral;
   display: grid;
   grid-template-columns: 3fr 2fr;
-  gap: 16px;
+  gap: 24px;
 }
 
 .header label {
@@ -120,21 +122,21 @@ h6 {
 
 .header .search-icon {
   flex: none;
-  width: 30px;
+  width: 24px;
   background-color: rgb(240, 128, 201);
 }
 
 .header .info-section {
   background-color: rgb(187, 182, 255);
   display: flex;
-  gap: 8px;
+  gap: 16px;
   justify-content: flex-end;
   align-items: center;
 }
 
 .header .notification-icon {
   background-color: lightblue;
-  width: 30px;
+  width: 24px;
 }
 
 .header .profile-img {
@@ -190,7 +192,7 @@ h6 {
 
 button {
   flex: none;
-  width: 100px;
+  width: 90px;
   border-radius: 50px;
   padding: 4px;
   font-weight: bold;
@@ -200,6 +202,38 @@ button {
   background-color: lightgoldenrodyellow;
   grid-column: 1 / 2;
   grid-row: 1 / 4;
+  font-weight: bold;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+li {
+  list-style: none;
+}
+
+.sidebar-header {
+  background-color: rgb(210, 250, 222);
+  font-size: 1.2rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sidebar-header svg {
+  width: 45px;
+}
+
+.settings-block li {
+  background-color: lightcoral;
+  display: flex;
+  gap: 24px;
+  padding: 8px;
+}
+
+.settings-block svg {
+  width: 24px;
 }
 
 .main-content {
